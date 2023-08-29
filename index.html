@@ -4,47 +4,205 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   </head>
-  <body>
-    <!-- Navbar start -->
-
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark  ">
-      <div class="container">
-        <a class="navbar-brand" href="#">Beranda</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto  ">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Beranda</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
+
     <!-- Navbar end -->
 
     <!-- jumbotron -->
-    <div class="jumbotron text-center ">
-      <img src="img/working_4727424.png" alt="" width="200" class="rounded-circle img-thumbnail ">
+    <div class="jumbotron text-center">
+      <img src="img/working_4727424.png" alt="" width="200"  class="rounded-circle img-thumbnail "  data-aos="zoom-in">
       <h1 class="display-4 fs-3 p-1 fw-bold ">Arkan</h1>
       <p class="lead">Student</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L48,128C96,128,192,128,288,122.7C384,117,480,107,576,133.3C672,160,768,224,864,218.7C960,213,1056,139,1152,101.3C1248,64,1344,64,1392,64L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-      
-      
-      
-      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L24,74.7C48,85,96,107,144,128C192,149,240,171,288,186.7C336,203,384,213,432,186.7C480,160,528,96,576,69.3C624,43,672,53,720,80C768,107,816,149,864,149.3C912,149,960,107,1008,80C1056,53,1104,43,1152,69.3C1200,96,1248,160,1296,160C1344,160,1392,96,1416,64L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg> 
     </div>
     <!-- jumbotron -->
+
+    <!-- About -->
+
+    <section id="about" data-aos="fade-up">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2>About Me</h2>
+          </div>
+          <div class="row justify-content-center pt-3  text-center fs-5">
+            <div class="col-md-4">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste omnis aperiam tempore recusandae </p>
+            </div>
+            <div class="col-md-4 text-center">
+              <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, labore!</p>
+              
+            </div>
+            <div class="foto">
+              <img src="img/working_4727424.png" width="200px">
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2dfd6" fill-opacity="1" d="M0,256L17.1,224C34.3,192,69,128,103,128C137.1,128,171,192,206,229.3C240,267,274,277,309,261.3C342.9,245,377,203,411,192C445.7,181,480,203,514,192C548.6,181,583,139,617,122.7C651.4,107,686,117,720,138.7C754.3,160,789,192,823,213.3C857.1,235,891,245,926,256C960,267,994,277,1029,234.7C1062.9,192,1097,96,1131,90.7C1165.7,85,1200,171,1234,176C1268.6,181,1303,107,1337,106.7C1371.4,107,1406,181,1423,218.7L1440,256L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"></path></svg>
+    </section>
+
+    <!-- About -->
+
+    <!-- Project -->
+
+    <section id="projects">
+      <div class="container">
+        <div class="row text-center">
+        <div class="col">
+          <h2>Gallery</h2>
+        </div>
+        </div>
+        <div class="row pt-3 galeri">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/galeri1.jpg" class="card-img-top card-img" alt="...">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/galeri2.jpg" class="card-img-top card-img" alt="...">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/working_4727424.png" class="card-img-top card-img" alt="...">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project -->
+
+    <!-- Contact -->
+    <section class="contact pt-4" id="contact">
+      <div class="container">
+        <div class="row pt-4 mb-4">
+          <div class="col text-center">
+            <h2>Contact</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div class="card bg-primary text-white mb-4 text-center">
+              <div class="card-body bg-black">
+                <h5 class="card-title">Contact Me</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, aut.</p>
+              </div>
+            </div>
+            
+            <ul class="list-group mb-4">
+              <li class="list-group-item"><h3>Location</h3></li>
+              <li class="list-group-item">My Home</li>
+              <li class="list-group-item">Bekasi</li>
+              <li class="list-group-item">West Java, Indonesia</li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-6">
+            <div class="alert alert-success  alert-dismissible fade show col my-alert d-none " role="alert">
+              <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div> 
+            <form name="submit-sheets">
+              <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" name="nama" class="form-control" id="nama" placeholder="Masukkan nama" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" class="form-control" id="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" name="nohp" class="form-control" id="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="pesan" class="form-control" id="message" rows="3" required></textarea>
+              </div>
+              <div class="form-group mt-3 mb-3">
+                <button type="submit"  class="btn btn-dark btn-kirim">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+
+    <!-- footer -->
+    <footer class="">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000" fill-opacity="1" d="M0,128L18.5,112C36.9,96,74,64,111,58.7C147.7,53,185,75,222,96C258.5,117,295,139,332,176C369.2,213,406,267,443,272C480,277,517,235,554,202.7C590.8,171,628,149,665,133.3C701.5,117,738,107,775,122.7C812.3,139,849,181,886,165.3C923.1,149,960,75,997,69.3C1033.8,64,1071,128,1108,160C1144.6,192,1182,192,1218,181.3C1255.4,171,1292,149,1329,133.3C1366.2,117,1403,107,1422,101.3L1440,96L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"></path></svg>
+      <div class="container-fluid  text-center bg-black ">
+        <div class="row">
+          <div class="">
+            <p class="mb-4">&copy; copyright 2017 | built with <i class="glyphicon glyphicon-heart"></i></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- akhir footer -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwi1abkTIGRZDOsXZTQwMRDXD4sExQa4GRfZ06fphVyd-GVSRbEfOnjDKUsjCGlWu16/exec'
+      const form = document.forms['submit-sheets']
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert')
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        //ketika tombol submit di click
+        //tampilkan tombol loading, hilangkan tombol kirim
+        myAlert.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response =>  console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>

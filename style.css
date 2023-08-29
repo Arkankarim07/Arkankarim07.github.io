@@ -1,4 +1,54 @@
+body{
+  background: #e2dfd6; 
+}
+
 .jumbotron{
   padding-top: 2rem;
   background: #e2dfd6;
+}
+
+
+#projects{
+  background: #e2dfd6;
+}
+
+
+
+.form-group{
+  font-weight: bold;
+  margin-top: 5px; 
+}
+
+.foto{
+  margin-left: 10px;
+}
+
+.contact{
+  background: #e2dfd6;
+}
+
+
+.card-img{
+  height: 200px;
+  object-fit: cover;
+}
+
+.nav-link{
+  color: #fff;
+}
+
+footer{
+  background: #e2dfd6;
+  color: #fff;
+  padding-top: 30px;
+}
+
+@media (max-width: 750px){
+  .foto{
+    margin-left: 10px;
+  }
+
+  .galeri{
+    gap: 15px;
+  }
 }
